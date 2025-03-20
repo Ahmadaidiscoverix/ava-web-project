@@ -1,0 +1,119 @@
+.login-container {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fd;
+    padding: 10px;
+}
+  
+.login-card {
+    width: 100%;
+    max-width: 320px;  // 🔹 Reduced width for a more compact look
+    padding: 20px;  // 🔹 Reduced padding
+    background: white;
+    border-radius: 8px;  // 🔹 Slightly smaller border radius
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #1a73e8;
+}
+  
+.logo img {
+    width: 40px;  // 🔹 Slightly smaller logo
+    margin-bottom: 8px;
+    display: block;
+}
+  
+h2 {
+    font-size: 20px;  // 🔹 Reduced font size
+    font-weight: bold;
+    margin: 3px 0;
+    text-align: center;  // 🔹 Centering the heading
+}
+  
+.subtitle {
+    font-size: 12px;  // 🔹 Reduced subtitle size
+    color: gray;
+    margin-bottom: 15px;
+    text-align: center;
+}
+  
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+  
+mat-form-field {
+    margin-bottom: 12px;
+}
+  
+input {
+    width: 100%;  // 🔹 Ensures full-width input
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+  
+.login-btn {
+    width: 100%;
+    padding: 5px;  // 🔹 Slightly smaller button
+    font-size: 14px;  // 🔹 Smaller text
+    border-radius: 5px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+.forgot-password {
+    text-align: right;
+    margin-top: 5px;
+}
+  
+.forgot-password a {
+    color: #1a73e8;
+    font-size: 12px;  // 🔹 Reduced text size
+    text-decoration: none;
+}
+  
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    color: gray;
+}
+  
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: lightgray;
+    margin: 0 8px;
+}
+  
+.google-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+  
+.google-btn img {
+    width: 16px;
+    margin-right: 6px;
+}
+  
+.register-text {
+    margin-top: 20px;  // 🔹 Reduced spacing
+    font-size: 12px;  // 🔹 Smaller text
+    text-align: center;
+}
+  
+.register-text a {
+    color: #1a73e8;
+    font-weight: bold;
+    text-decoration: none;
+}

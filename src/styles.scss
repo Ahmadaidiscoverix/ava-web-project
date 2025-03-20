@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@include mat.core();
+
+// Define the primary, accent, and warn colors based on your design
+$my-primary: mat.define-palette(mat.$blue-palette, 600);
+$my-accent: mat.define-palette(mat.$blue-palette, 300);
+$my-warn: mat.define-palette(mat.$red-palette);
+
+// Define the theme using light mode
+$material-dashboard-theme: mat.define-light-theme((
+  color: (
+    primary: $my-primary,
+    accent: $my-accent,
+    warn: $my-warn,
+  ),
+  typography: mat.define-typography-config(),
+  density: 0,
+));
+
+// Apply the theme globally
+@include mat.all-component-themes($material-dashboard-theme);
+
+// Custom Styles for Sidebar, Header, and Cards
+
+// Sidebar Styling
+.sidebar-container {
+  background-color: white;
+  color: black;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+// Header Styling
+.header {
+  background-color: #dbe9ff; // Light blue header background
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Search Box
+.search-box {
+  background: white;
+  border-radius: 24px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 60%;
+}
+
+// Card Styles
+.mat-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.mat-card:hover {
+  transform: translateY(-5px);
+}

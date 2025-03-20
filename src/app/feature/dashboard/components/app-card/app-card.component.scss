@@ -1,0 +1,30 @@
+.template-card {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: left;
+  }
+  
+  .template-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .template-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .template-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  

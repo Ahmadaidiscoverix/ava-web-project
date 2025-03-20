@@ -1,0 +1,73 @@
+.sidebar-container {
+    width: 250px; 
+    height: 100vh; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    left: 0;
+    top: 0;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a73e8; 
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .new-project-btn {
+    width: 90%;
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 8px;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  .new-project-btn:hover {
+    color: white;
+  }
+  mat-nav-list {
+    flex-grow: 1;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  
+  mat-list-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: background 0.3s;
+    color: black;
+    font-weight: 500;
+  }
+  
+  mat-list-item:hover {
+    background-color: rgba(26, 115, 232, 0.1);
+  }
+  
+  mat-icon {
+    margin-right: 12px;
+    color: black;
+  }
+  
+  .logout {
+    margin-top: auto;
+    text-align: left;
+  }
+  
+  .logout a {
+    color: #d32f2f;
+  }
+  
