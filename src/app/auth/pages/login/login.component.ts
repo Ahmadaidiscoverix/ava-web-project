@@ -33,7 +33,9 @@ export class LoginComponent implements OnInit {
         next: (res) => {
           console.log('Login Successful', res);
           localStorage.setItem('accessToken', res.data.accessToken);
-          this.router.navigate(['/dashboard']);
+          setTimeout(() => {
+            this.router.navigate(['/dashboard']);
+          }, 0);
         },
         error: (error) => {
           console.error('Login Failed', error);

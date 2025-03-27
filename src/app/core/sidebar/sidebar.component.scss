@@ -90,3 +90,14 @@
     color: #d32f2f;
   }
   
+  .logout-btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: red; 
+  }
+  
+  mat-icon {
+    margin-right: 8px;
+  }
+  
