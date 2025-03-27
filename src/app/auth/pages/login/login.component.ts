@@ -30,9 +30,9 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     if (this.loginForm.valid) {
       this.authService.login(this.loginForm.value).subscribe({
-        next: (response) => {
-          console.log('Login Successful', response);
-          localStorage.setItem('accessToken', response.data.accessToken);
+        next: (res) => {
+          console.log('Login Successful', res);
+          localStorage.setItem('accessToken', res.data.accessToken);
           this.router.navigate(['/dashboard']);
         },
         error: (error) => {
@@ -42,4 +42,25 @@ export class LoginComponent implements OnInit {
       });
     }
   }
+
+  // onSubmit() {
+  //   if (this.loginForm.valid) {
+  //     this.authService.login(this.loginForm.value).subscribe({
+  //       next: (response) => {
+  //         console.log('Login Successful', response);
+  
+  //         // Store token
+  //         localStorage.setItem('accessToken', response.data.accessToken);
+  //         console.log('Stored Token:', localStorage.getItem('accessToken')); // Debugging
+  
+  //         // Redirect to Dashboard
+  //         this.router.navigate(['/dashboard']);
+  //       },
+  //       error: (error) => {
+  //         console.error('Login Failed', error);
+  //         this.errorMessage = error?.error?.message || 'Invalid email or password';
+  //       },
+  //     });
+  //   }
+  // }
 }

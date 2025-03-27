@@ -5,8 +5,6 @@ import { MatModule } from '../../module/mat/mat.module';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { AppCardComponent } from './components/app-card/app-card.component';
 
-
-
 @NgModule({
   declarations: [
     DashboardHomeComponent,
