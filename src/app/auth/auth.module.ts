@@ -2,10 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './pages/login/login.component';
 import { MatModule } from '../module/mat/mat.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthRoutingModule } from './auth-routing.module';
 import { SignupComponent } from './pages/signup/signup.component';
-
 
 
 @NgModule({
@@ -17,7 +16,8 @@ import { SignupComponent } from './pages/signup/signup.component';
     CommonModule,
     MatModule,
     ReactiveFormsModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    FormsModule
   ],
   exports: [ ]
 })

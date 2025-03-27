@@ -10,13 +10,13 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatFormFieldModule, MatLabel } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
-
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 const material = [
   MatButtonModule,
   MatCardModule,
   MatIconModule,
-  MatListModule,
+  MatListModule,  
   MatToolbarModule,
   MatTableModule,
   MatSidenavModule,
@@ -24,6 +24,7 @@ const material = [
   MatFormFieldModule,
   MatIcon,
   MatLabel,
+  MatCheckboxModule
 ];
 
 

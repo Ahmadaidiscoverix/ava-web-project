@@ -3,9 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
 import { MatModule } from './module/mat/mat.module';
+import { HttpClientModule,  } from '@angular/common/http';
+import { AuthModule } from './auth/auth.module';
+
 
 @NgModule({
   declarations: [
@@ -16,10 +19,10 @@ import { MatModule } from './module/mat/mat.module';
     AppRoutingModule,
     CoreModule,
     MatModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }

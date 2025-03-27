@@ -12,12 +12,18 @@
   }
   
   .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #1a73e8; 
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 1rem;
+  
+    img {
+      max-width: 200px;
+      max-height: 50px;
+      object-fit: contain; 
+    }
   }
+  
   
   .new-project-btn {
     width: 90%;
@@ -61,6 +67,19 @@
     margin-right: 12px;
     color: black;
   }
+ 
+  .divider {
+    display: flex;
+    align-items: center;
+    color: rgb(100, 99, 99);
+}
+  
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: rgb(124, 124, 124);
+    margin: 0 8px;
+}
   
   .logout {
     margin-top: auto;

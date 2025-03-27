@@ -1,5 +1,5 @@
 .login-container {
-    min-height: 100vh; 
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,89 +7,85 @@
     background: #f8f9fd;
     padding: 10px;
 }
-  
+
 .login-card {
     width: 100%;
-    max-width: 320px;  // 🔹 Reduced width for a more compact look
-    padding: 20px;  // 🔹 Reduced padding
-    background: white;
-    border-radius: 8px;  // 🔹 Slightly smaller border radius
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #1a73e8;
+    max-width: 320px;
+    padding: 20px;
+    border-radius: 8px;
 }
-  
+
 .logo img {
-    width: 40px;  // 🔹 Slightly smaller logo
+    width: 70px;
+    height: 35px;
     margin-bottom: 8px;
     display: block;
 }
-  
+
 h2 {
-    font-size: 20px;  // 🔹 Reduced font size
+    font-size: 20px;
     font-weight: bold;
     margin: 3px 0;
-    text-align: center;  // 🔹 Centering the heading
 }
-  
+
 .subtitle {
-    font-size: 12px;  // 🔹 Reduced subtitle size
+    font-size: 12px;
     color: gray;
     margin-bottom: 15px;
-    text-align: center;
 }
-  
+
 form {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-  
+
 mat-form-field {
     margin-bottom: 12px;
 }
-  
+
 input {
-    width: 100%;  // 🔹 Ensures full-width input
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    width: 100%;
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 10px;
 }
-  
+
 .login-btn {
     width: 100%;
-    padding: 5px;  // 🔹 Slightly smaller button
-    font-size: 14px;  // 🔹 Smaller text
+    padding: 5px;
+    font-size: 14px;
     border-radius: 5px;
     background-color: #1a73e8;
     color: white;
     border: none;
     cursor: pointer;
 }
-  
+
 .forgot-password {
     text-align: right;
     margin-top: 5px;
 }
-  
+
 .forgot-password a {
     color: #1a73e8;
-    font-size: 12px;  // 🔹 Reduced text size
+    font-size: 12px;
     text-decoration: none;
 }
-  
+
 .divider {
     display: flex;
     align-items: center;
     margin: 12px 0;
-    color: gray;
+    color: rgb(100, 99, 99);
 }
-  
+
 .divider span {
     flex: 1;
     height: 1px;
-    background: lightgray;
+    background: rgb(124, 124, 124);
     margin: 0 8px;
 }
-  
+
 .google-btn {
     width: 100%;
     padding: 10px;
@@ -99,21 +95,37 @@ input {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border: 1px solid #ccc;
 }
-  
+
 .google-btn img {
-    width: 16px;
+    width: 24px;
     margin-right: 6px;
 }
-  
+
 .register-text {
-    margin-top: 20px;  // 🔹 Reduced spacing
-    font-size: 12px;  // 🔹 Smaller text
+    margin-top: 20px;
+    font-size: 12px;
     text-align: center;
 }
-  
+
 .register-text a {
     color: #1a73e8;
     font-weight: bold;
     text-decoration: none;
+}
+
+.dashboard-preview {
+    background: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  
+    overflow: hidden;
+}
+
+.dashboard-image {
+    max-width: 90%;
+    margin-left: 40%;
+    height: auto;
 }
